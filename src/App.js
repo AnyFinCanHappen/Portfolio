@@ -25,7 +25,7 @@ class App extends Component
           <div className = "intro">
               Sidney Tan
               <p>
-                Full Stack Engineer
+                Full Stack Developer
               </p>
                 <Link
                     activeClass="active"
@@ -42,9 +42,9 @@ class App extends Component
         <div className = "bio_section" id = "bio">
           <p className = "title">
             Bio
-          </p> 
+          </p>
           <p className = "bio_paragraph">
-            Hello! I am a computer science major from University California Irvine. My ideal postion is to be full stack engineer. Languages I know 
+            Hello! I am a computer science major from University California Irvine. My ideal postion is to be full stack engineer. Languages I know
             are Java, React, C++, Python, mySQL, and many more.
             <br></br><br></br>
             Other hobbies include playing video games (Valorant, League of Legends, Escape From Tarkov, ...) and guitar.
@@ -120,7 +120,3 @@ class App extends Component
   }
 }
 export default App;
-
-
-
-
