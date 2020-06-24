@@ -16,6 +16,19 @@ class App extends Component
     scroll.scrollToTop();
   }
 
+  scrollToFunc (props){
+    return (<Link
+    activeClass="active"
+    to= {props.section}
+    spy={true}
+    smooth={true}
+    offset={-70}
+    duration={600}
+    className = "scroll-down"
+  >
+  </Link>);
+  }
+  
   render()
   {
     return(
@@ -27,16 +40,7 @@ class App extends Component
               <p>
                 Full Stack Developer
               </p>
-                <Link
-                    activeClass="active"
-                    to="bio"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={600}
-                    className = "scroll-down"
-                >
-                </Link>
+              <this.scrollToFunc section = "bio"/>
           </div>
         </div>
         <div className = "bio_section" id = "bio">
@@ -49,16 +53,7 @@ class App extends Component
             <br></br><br></br>
             Other hobbies include playing video games (Valorant, League of Legends, Escape From Tarkov, ...) and guitar.
           </p>
-          <Link
-            activeClass="active"
-            to="project_title"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={600}
-            className = "scroll-down"
-          >
-          </Link>
+          <this.scrollToFunc section = "project_title"/>
         </div>
         <div className = "projects_section" id = "projects">
           <p className = "title" id = "project_title">
@@ -90,16 +85,7 @@ class App extends Component
           <p className = "github_description">
             Link to my <a href="https://github.com/AnyFinCanHappen" target="_blank" rel="noopener noreferrer">GitHub</a>
           </p>
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={600}
-            className = "scroll-down"
-          >
-          </Link>
+          <this.scrollToFunc section = "contact"/>
         </div>
         <div className = "contact_section" id = "contact">
           <p className = "title">

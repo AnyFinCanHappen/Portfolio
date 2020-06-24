@@ -31,6 +31,20 @@ class NavBar extends Component{
         scroll.scrollToTop();
       }
 
+    scrollToFunc (props){
+        return (<Link
+        activeClass="active"
+        to= {props.section}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={600}
+        className = "nav-link"
+        >
+        {props.text}
+        </Link>);
+    }      
+
     render(){
         return(
             <nav className = {classnames("nav-bar", {"nav-bar-hidden": !this.state.isVisible})}>
@@ -38,40 +52,9 @@ class NavBar extends Component{
                     <NavLink className = "nav-link" onClick = {this.scrollToTop} to = "">
                         Home
                     </NavLink>
-            
-                    <Link
-                    activeClass="active"
-                    to="bio"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={600}
-                    className = "nav-link"
-                    >Bio
-                    </Link>
-
-                    <Link
-                    activeClass="active"
-                    to="project_title"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={600}
-                    className = "nav-link"
-                    >Projects
-                    </Link>
-
-                    <Link
-                    activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={600}
-                    className = "nav-link"
-                    >Contact
-                    </Link>
-
+                    <this.scrollToFunc section = "bio" text = "Bio"/>
+                    <this.scrollToFunc section = "proect_title" text = "Projects"/>
+                    <this.scrollToFunc section = "contact" text = "Contact"/>
                 </Fragment>
             </nav>
         );
