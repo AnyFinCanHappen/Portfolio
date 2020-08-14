@@ -16,7 +16,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends Component
 {
   state = {
+    width:window.innerWidth
+  }
 
+  componentDidMount() {
+    this.updateWidth();
+    window.addEventListener('resize', this.updateWidth);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWidth);
+  }
+
+  updateWidth = () =>{
+    this.setState({width:window.innerWidth})
   }
 
   scrollToTop = () =>{
@@ -51,6 +64,11 @@ class App extends Component
 
   render()
   {
+    const {width} = this.state;
+    let videoPlayerSize = "640px"
+    if(width <  640){
+      videoPlayerSize = "auto";
+    }
     return(
       <div className = "App">
         <NavBar > </NavBar>
@@ -61,14 +79,14 @@ class App extends Component
 
             <div className = "intro">
                 Sidney Tan
-                <br></br>
+                <p>
                   Full Stack Developer
-                <br></br>
+                </p>
                 <this.scrollToFunc section = "bio"/>
             </div>
             </Col>
           </Row>
-          <div className = "bio_section" id = "bio">
+          <div className id = "bio">
             <p className = "title">
               Bio
             </p>
@@ -80,14 +98,14 @@ class App extends Component
             </p>
             <this.scrollToFunc section = "project_title"/>
           </div>
-          <div className = "projects_section" id = "projects">
+          <div  id = "projects">
             <p className = "title" id = "project_title">
               Projects
             </p>
             <p className = "fabflix_title">
               Fabflix
             </p>
-            <ReactPlayer url = "https://www.youtube.com/watch?v=mP02Bd30sa8" controls = "true" className = "fabflix_player">
+            <ReactPlayer url = "https://www.youtube.com/watch?v=mP02Bd30sa8" controls = "true" className = "fabflix_player" width = {videoPlayerSize}>
             </ReactPlayer>
             <p className = "fabflix_description">
               Web application that was built in one of my project course at UCI.
@@ -112,12 +130,12 @@ class App extends Component
             </p>
             <this.scrollToFunc section = "contact"/>
           </div>
-          <div className = "contact_section" id = "contact">
+          <div  id = "contact">
             <p className = "title">
                 Contact Me
             </p>
             <p className = "github_title">
-              <a href="https://github.com/AnyFinCanHappen" target="_blank" rel="noopener noreferrer">Linkedin</a>
+              <a href="https://www.linkedin.com/in/sidney-tan-60a6b1192" target="_blank" rel="noopener noreferrer">Linkedin</a>
             </p>
             <p className = "github_title">
               sidneyjt@uci.edu

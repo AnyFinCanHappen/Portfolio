@@ -9,7 +9,7 @@
 
 .intro{
   position: absolute;
-  top:50%;
+  top:25%;
   width: 100vw;
 }
 
@@ -62,6 +62,8 @@
 
 .fabflix_player
 {
+  width: auto;
+  height:auto;
   margin-left: auto;
   margin-right: auto;
   border-color: white;
