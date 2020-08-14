@@ -113,33 +113,66 @@ class App extends Component
                 <p className = "title" id = "project_title">
                   Projects
                 </p>
+                <div style = {{textAlign : "left"}}>
+                <p className = "fabflix_title">
+                  Mountie Planner
+                </p>
+                <p className = "fabflix_description">
+                  A Course scheduler made with the MERN stack!
+                  <br></br>
+                  <b>Front End: </b>
+                  React.js
+                  <br></br>
+                  <b>Back End: </b>
+                  Node.js, Express.js
+                  <br></br>
+                  <b>Database: </b>
+                  MongoDB
+                  <br></br>
+                  Hosted on AWS EC2. 
+                  <br></br>
+                  Using NGINX and PM2 for load balancing.
+                  <br></br>
+                  Click <a href="https://mountieplanner.com" target="_blank" rel="noopener noreferrer">here</a> to visit the site!
+                </p>
+                </div>
+                <br></br>
+                <div style = {{textAlign:"left"}}>
                 <p className = "fabflix_title">
                   Fabflix
                 </p>
-                <ReactPlayer url = "https://www.youtube.com/watch?v=mP02Bd30sa8" controls = "true" className = "fabflix_player" width = {videoPlayerWidth} height = {videoPlayerHeight}>
+                <ReactPlayer 
+                  url = "https://www.youtube.com/watch?v=mP02Bd30sa8" 
+                  controls = "true" className = "fabflix_player" 
+                  width = {videoPlayerWidth} 
+                  height = {videoPlayerHeight}
+                >
                 </ReactPlayer>
                 <br></br>
                 <p className = "fabflix_description">
                   CRUD web app that allows users to buy/search movies.
                   <br></br>
-                  <b>Front End</b>:
-                  React, Node.js
+                  <b>Front End: </b>
+                  React.js, Node.js
                   <br></br>
-                  <b>Back End</b>:
+                  <b>Back End: </b>
                   Java
                   <br></br>
-                  <b>Databases</b>:
+                  <b>Databases: </b>
                   MySQL, JDBC
                   <br></br>
-                  Other tools:
+                  <b>Other tools: </b>
                   GitHub, Gradle, Postman
                 </p>
+                </div>
+                <div style = {{textAlign:"left"}}>
                 <p className = "github_title">
                   GitHub
                 </p>
                 <p className = "github_description">
                   Link to my <a href="https://github.com/AnyFinCanHappen" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </p>    
+                </p>  
+                </div>  
                 <this.scrollToFunc section = "contact"/>
               </div>
             </Col>
