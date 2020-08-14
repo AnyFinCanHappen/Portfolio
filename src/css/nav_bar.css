@@ -46,7 +46,7 @@
 .nav-bar-hidden{
   display: flex;
   justify-content: center;
-  width: calc(100vw - 10px);
+  width: calc(100vw);
   height: 50px;
   padding: 5px;
   position: fixed;
