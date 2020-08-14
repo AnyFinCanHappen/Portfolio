@@ -8,24 +8,24 @@
 }
 
 .intro{
-  position: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 175px;
+  position: absolute;
+  top:50%;
+  width: 100vw;
 }
 
 
 .background_image{
   top:50%;
   background-image: url(./css/background_mono.jpg);
-  background-size: contain;
-  height: 1050px;
-  width: 100%;
+  background-size: cover;
+  height: 100vh;
+  
 
   background-position: top;
   background-repeat: no-repeat;
   background-color:#7d7d7d;
 }
+
 
 .title
 {
