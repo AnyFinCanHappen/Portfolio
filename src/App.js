@@ -65,9 +65,11 @@ class App extends Component
   render()
   {
     const {width} = this.state;
-    let videoPlayerSize = "640px"
+    let videoPlayerWidth = "640px";
+    let videoPlayerHeight = "360px";
     if(width <  640){
-      videoPlayerSize = "auto";
+      videoPlayerWidth = "auto";
+      videoPlayerHeight = "200px";
     }
     return(
       <div className = "App">
@@ -105,7 +107,7 @@ class App extends Component
             <p className = "fabflix_title">
               Fabflix
             </p>
-            <ReactPlayer url = "https://www.youtube.com/watch?v=mP02Bd30sa8" controls = "true" className = "fabflix_player" width = {videoPlayerSize}>
+            <ReactPlayer url = "https://www.youtube.com/watch?v=mP02Bd30sa8" controls = "true" className = "fabflix_player" width = {videoPlayerWidth} height = {videoPlayerHeight}>
             </ReactPlayer>
             <p className = "fabflix_description">
               Web application that was built in one of my project course at UCI.
@@ -143,6 +145,7 @@ class App extends Component
             <img src = {logo} alt ="self" className = "self_image" />
             <br></br><br></br>
             <a onClick = {this.scrollToTop} href="/#" className = "scroll-up"> </a>
+            <br></br><br></br>
           </div>
         </Container>
       </div>
