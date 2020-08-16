@@ -60,7 +60,7 @@ class App extends Component
       videoPlayerHeight = "200px";
     }
     return(
-      <div className = "App">
+      <div className = "App" style = {{overflowX:"hidden"}}>
         <NavBar width = {width}> </NavBar>
         <Container fluid>
           <Row >
