@@ -32,6 +32,7 @@ class NavBar extends Component{
       }
 
     scrollToFunc (props){
+        const {fontSize} = props;
         return (<Link
         activeClass="active"
         to= {props.section}
@@ -40,22 +41,27 @@ class NavBar extends Component{
         offset={-70}
         duration={600}
         className = "nav-link"
-        >
+        style = {{fontSize :fontSize}}>
         {props.text}
         </Link>);
     }      
 
     render(){
+        const {width} = this.props;
+        let fontSize = "20px"
+        if(width < 400){
+            fontSize = "14px";
+        }
         return(
             <nav className = {classnames("nav-bar", {"nav-bar-hidden": !this.state.isVisible})}>
                 <Fragment>
-                    <NavLink className = "nav-link" onClick = {this.scrollToTop} to = "">
+                    <NavLink className = "nav-link" onClick = {this.scrollToTop} to = "" style = {{fontSize:fontSize}}>
                         Home
                     </NavLink>
-                    <this.scrollToFunc section = "bio" text = "Bio"/>
-                    <this.scrollToFunc section = "project_title" text = "Projects"/>
-                    <this.scrollToFunc section = "skills" text = "Skills/Tools"/>
-                    <this.scrollToFunc section = "contact" text = "Contact"/>
+                    <this.scrollToFunc section = "bio" text = "Bio" fontSize = {fontSize}/>
+                    <this.scrollToFunc section = "project_title" text = "Projects" fontSize = {fontSize}/>
+                    <this.scrollToFunc section = "skills" text = "Skills/Tools" fontSize = {fontSize}/>
+                    <this.scrollToFunc section = "contact" text = "Contact" fontSize = {fontSize}/>
                 </Fragment>
             </nav>
         );
