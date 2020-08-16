@@ -10,7 +10,7 @@ import Col from "react-bootstrap/Col";
 import background_image from "./css/background_mono.jpg";
 import Image from "react-bootstrap/Image";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Skills from "./Skills";
 
 
 class App extends Component
@@ -49,18 +49,6 @@ class App extends Component
   </Link>);
   }
   
-  /*
-            <div className = "background_image">
-            <NavBar scrollToFunc = {this.scrollToFunc}> </NavBar>
-            <div className = "intro">
-                Sidney Tan
-                <p>
-                  Full Stack Developer
-                </p>
-                <this.scrollToFunc section = "bio"/>
-            </div>
-          </div>
-  */
 
   render()
   {
@@ -99,13 +87,15 @@ class App extends Component
                   Hello! I am a computer science major from University California Irvine. My ideal postion is to be full stack devloper. Languages I know
                   are Java, React, C++, Python, mySQL, and many more.
                   <br></br><br></br>
-                  Other hobbies include playing video games (Valorant, League of Legends, Escape From Tarkov, ...) and guitar.
+                  Other hobbies include playing video games and guitar.
                 </p>
                 <this.scrollToFunc section = "project_title"/>
               </div>
             </Col>
               <Col></Col>
           </Row>
+          <br></br>
+          <br></br>
           <Row>
             <Col></Col>
             <Col md = {6} xs = {10}>
@@ -134,6 +124,8 @@ class App extends Component
                   Using NGINX and PM2 for load balancing.
                   <br></br>
                   Click <a href="https://mountieplanner.com" target="_blank" rel="noopener noreferrer">here</a> to visit the site!
+                  <br></br>
+                  Click <a href="https://github.com/AnyFinCanHappen/mtsac_scheduler_fe" target="_blank" rel="noopener noreferrer">here</a> for the github page. 
                 </p>
                 </div>
                 <br></br>
@@ -143,7 +135,7 @@ class App extends Component
                 </p>
                 <ReactPlayer 
                   url = "https://www.youtube.com/watch?v=mP02Bd30sa8" 
-                  controls = "true" className = "fabflix_player" 
+                  controls = {true} className = "fabflix_player" 
                   width = {videoPlayerWidth} 
                   height = {videoPlayerHeight}
                 >
@@ -163,6 +155,8 @@ class App extends Component
                   <br></br>
                   <b>Other tools: </b>
                   GitHub, Gradle, Postman
+                  <br></br>
+                  Click <a href="https://github.com/AnyFinCanHappen/FabFlix" target="_blank" rel="noopener noreferrer">here</a> for the github page. 
                 </p>
                 </div>
                 <div style = {{textAlign:"left"}}>
@@ -173,11 +167,29 @@ class App extends Component
                   Link to my <a href="https://github.com/AnyFinCanHappen" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </p>  
                 </div>  
-                <this.scrollToFunc section = "contact"/>
+                <this.scrollToFunc section = "skills"/>
               </div>
             </Col>
             <Col></Col>
           </Row>
+          <br></br>
+          <br></br>
+          <Row>
+            <Col></Col>
+              <div id = "skills">
+                <Col xs = {10}>
+                  <p className = "title">
+                    Skills and Tools
+                  </p>
+                  <Skills></Skills>
+                </Col>
+                <br></br>
+                <this.scrollToFunc section = "contact"/>
+              </div>
+            <Col></Col>
+          </Row>
+          <br></br>
+          <br></br>
           <Row>
             <Col></Col>
             <Col md = {6} xs = {10}>

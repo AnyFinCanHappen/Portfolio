@@ -54,6 +54,7 @@ class NavBar extends Component{
                     </NavLink>
                     <this.scrollToFunc section = "bio" text = "Bio"/>
                     <this.scrollToFunc section = "project_title" text = "Projects"/>
+                    <this.scrollToFunc section = "skills" text = "Skills/Tools"/>
                     <this.scrollToFunc section = "contact" text = "Contact"/>
                 </Fragment>
             </nav>
