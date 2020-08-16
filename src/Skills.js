@@ -26,7 +26,7 @@ class Skills extends Component{
 
     displaySkills = () =>{
         return(
-            <Row sm = {6} xs = {2}>
+            <Row sm = {3} xs = {2} md = {5} lg = {6}>
             {Object.keys(images).map((key) =>{
                 return(
                     <Col className = "px-0" key = {key}>
@@ -48,7 +48,7 @@ class Skills extends Component{
                     <Card style = {{backgroundColor:"transparent"}}>
                         <Card.Body></Card.Body>
                         <Card.Footer>
-                                <div style = {{fontSize:"Large"}}>
+                                <div style = {{fontSize:"large"}}>
                                     And many more!
                                 </div>
                         </Card.Footer>
