@@ -84,10 +84,9 @@ class App extends Component
                   Bio
                 </p>
                 <p className = "bio_paragraph">
-                  Hello! I am a computer science major from University California Irvine. My ideal postion is to be full stack devloper. Languages I know
-                  are Java, React, C++, Python, mySQL, and many more.
+                  Hello! I am a computer science major from University California Irvine. My ideal postion is to be full stack devloper. 
                   <br></br><br></br>
-                  Other hobbies include playing video games and guitar.
+                  Other hobbies include playing video games and guitar!
                 </p>
                 <this.scrollToFunc section = "project_title"/>
               </div>
