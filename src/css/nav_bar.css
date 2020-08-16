@@ -10,7 +10,7 @@
 .nav-link {
   justify-content: center;
   padding: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: var(--detail-font-color);
   text-decoration: none;
 }
@@ -40,7 +40,6 @@
   z-index: 9999;
   background-color: var(--detail-color);
   transition: background 1s;
-
 }
 
 .nav-bar-hidden{

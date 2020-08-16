@@ -61,7 +61,7 @@ class App extends Component
     }
     return(
       <div className = "App">
-        <NavBar > </NavBar>
+        <NavBar width = {width}> </NavBar>
         <Container fluid>
           <Row >
             <Col className = "px-0">
@@ -175,18 +175,19 @@ class App extends Component
           <br></br>
           <br></br>
           <Row>
-            <Col></Col>
-              <div id = "skills">
-                <Col xs = {10}>
-                  <p className = "title">
-                    Skills and Tools
-                  </p>
-                  <Skills></Skills>
+            <Col ></Col>
+                <Col xs = {10} sm = {10} >
+                  <div id = "skills">
+                    <p className = "title" >
+                      Skills and Tools
+                    </p>
+                    <Skills></Skills>
+                  </div>
+                  <br></br>            
+                  <this.scrollToFunc section = "contact"/>  
                 </Col>
-                <br></br>
-                <this.scrollToFunc section = "contact"/>
-              </div>
-            <Col></Col>
+           
+            <Col ></Col>
           </Row>
           <br></br>
           <br></br>
