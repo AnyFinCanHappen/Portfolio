@@ -84,9 +84,11 @@ class App extends Component
                   Bio
                 </p>
                 <p className = "bio_paragraph">
-                  Hello! I am a computer science major from University California Irvine. My ideal postion is to be full stack devloper. 
-                  <br></br><br></br>
-                  Other hobbies include playing video games and guitar!
+                Hello, I am a full stack enginner from University of California Irvine. Being a full stack engineer enables my
+passion to create tools that will make users' lives more convenient. I am always eager to learn the latest web development
+technologies that can be used in my work or projects. When it comes to web applications, I want to build a positive user
+experience with clean and efficient software.
+                  <br></br>
                 </p>
                 <this.scrollToFunc section = "project_title"/>
               </div>
