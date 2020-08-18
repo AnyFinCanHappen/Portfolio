@@ -84,7 +84,7 @@ class App extends Component
                   Bio
                 </p>
                 <p className = "bio_paragraph">
-                Hello, I am a full stack enginner from University of California Irvine. Being a full stack engineer enables my
+                Hello, I am a full stack developer from University of California Irvine. Being a full stack developer enables my
 passion to create tools that will make users' lives more convenient. I am always eager to learn the latest web development
 technologies that can be used in my work or projects. When it comes to web applications, I want to build a positive user
 experience with clean and efficient software.
