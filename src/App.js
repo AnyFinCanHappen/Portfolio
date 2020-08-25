@@ -155,7 +155,7 @@ experience with clean and efficient software.
                   MySQL, JDBC
                   <br></br>
                   <b>Other tools: </b>
-                  GitHub, Gradle, Postman
+                  GitHub, Gradle, Postman, Jackson
                   <br></br>
                   Click <a href="https://github.com/AnyFinCanHappen/FabFlix" target="_blank" rel="noopener noreferrer">here</a> for the github page. 
                 </p>
