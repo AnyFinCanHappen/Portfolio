@@ -1,0 +1,8 @@
+.btn-logoColor{
+    background-color: transparent;
+    border-color:transparent;
+
+}
+.btn-logoColor:hover{
+    border-color: teal;
+}

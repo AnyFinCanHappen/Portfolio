@@ -2,15 +2,22 @@ import React, {Component} from 'react';
 import ReactPlayer from 'react-player'
 import {Link, animateScroll as scroll} from "react-scroll";
 import './App.css';
+import "./css/logo.css"
 import NavBar from './NavBar';
 import logo from "./css/self_image.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import background_image from "./css/background_mono.jpg";
+import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Skills from "./Skills";
+
+import background_image from "./css/background_mono.jpg";
+import mountiePlannerImage from "./css/projectImage/Test.png"
+import linkLogo from "./css/Logos/Link.png";
+import githubLogo from "./css/Logos/github.png"
+
 
 
 class App extends Component
@@ -104,29 +111,36 @@ experience with clean and efficient software.
                 <p className = "title" id = "project_title">
                   Projects
                 </p>
+                <br></br>
                 <div style = {{textAlign : "left"}}>
                 <p className = "fabflix_title">
                   Mountie Planner
                 </p>
+                <Image src = {mountiePlannerImage} style = {{marginBottom : "20px"}}fluid ></Image>
+                <br></br>
                 <p className = "fabflix_description">
                   A Course scheduler made with the MERN stack!
                   <br></br>
-                  <b>Front End: </b>
-                  React.js
-                  <br></br>
-                  <b>Back End: </b>
-                  Node.js, Express.js
-                  <br></br>
-                  <b>Database: </b>
-                  MongoDB
-                  <br></br>
-                  Hosted on AWS EC2. 
-                  <br></br>
-                  Using NGINX and PM2 for load balancing.
-                  <br></br>
-                  Click <a href="https://mountieplanner.com" target="_blank" rel="noopener noreferrer">here</a> to visit the site!
-                  <br></br>
-                  Click <a href="https://github.com/AnyFinCanHappen/mtsac_scheduler_fe" target="_blank" rel="noopener noreferrer">here</a> for the github page. 
+                  <div style = {{marginTop:"30px", marginBottom: "30px"}}>
+                    <b>Tools and Languages: </b>
+                    <br></br>
+                    JavaScript, React.js, Node.js, Express.js, MongoDB, AWS(EC2), NGINX, PM2.
+                    <br></br>
+                  </div>
+                  <Button variant = "logoColor" 
+                    href="https://mountieplanner.com"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <img src = {linkLogo} alt = "x" style = {{height:"40px", width:"40px"}}></img>
+                  </Button>
+                  <Button variant = "logoColor" 
+                    href="https://github.com/AnyFinCanHappen/mtsac_scheduler_fe"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <img src = {githubLogo} alt = "x" style = {{height:"40px", width:"40px"}}></img>
+                  </Button>
                 </p>
                 </div>
                 <br></br>
@@ -139,30 +153,29 @@ experience with clean and efficient software.
                   controls = {true} className = "fabflix_player" 
                   width = {videoPlayerWidth} 
                   height = {videoPlayerHeight}
+                  style = {{marginBottom : "30px"}}
                 >
                 </ReactPlayer>
-                <br></br>
                 <p className = "fabflix_description">
                   CRUD web app that allows users to buy/search movies.
                   <br></br>
-                  <b>Front End: </b>
-                  React.js, Node.js
-                  <br></br>
-                  <b>Back End: </b>
-                  Java
-                  <br></br>
-                  <b>Databases: </b>
-                  MySQL, JDBC
-                  <br></br>
-                  <b>Other tools: </b>
-                  GitHub, Gradle, Postman, Jackson
-                  <br></br>
-                  Click <a href="https://github.com/AnyFinCanHappen/FabFlix" target="_blank" rel="noopener noreferrer">here</a> for the github page. 
+                  <div style ={{marginTop:"30px", marginBottom: "30px"}}>
+                    <b>Tools and Languages: </b>
+                    React.js, JavaScript, Node.js, Java, MySQL, JDBC, Jackson
+                  </div>
+                  <Button variant = "logoColor" 
+                    href="https://github.com/AnyFinCanHappen/FabFlix"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <img src = {githubLogo} alt = "x" style = {{height:"40px", width:"40px"}}></img>
+                  </Button>
                 </p>
                 </div>
+                <br></br>
                 <div style = {{textAlign:"left"}}>
                 <p className = "github_title">
-                  GitHub
+                  Check out more of my projects at my GitHub!
                 </p>
                 <p className = "github_description">
                   Link to my <a href="https://github.com/AnyFinCanHappen" target="_blank" rel="noopener noreferrer">GitHub</a>
