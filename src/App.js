@@ -197,8 +197,8 @@ class App extends Component {
                                             }}
                                         >
                                             <b>Tools and Languages: </b>
-                                            React.js, JavaScript, Node.js, Java,
-                                            MySQL, JDBC, Jackson
+                                            React.js, JavaScript, Node.js, Java, Grizzly, 
+                                            MySQL, JDBC, Jackson.
                                         </div>
                                         <Button
                                             variant="logoColor"
