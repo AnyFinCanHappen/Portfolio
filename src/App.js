@@ -58,9 +58,11 @@ class App extends Component {
         const { width } = this.state;
         let videoPlayerWidth = "640px";
         let videoPlayerHeight = "360px";
+        let introFontSize = {};
         if (width < 640) {
             videoPlayerWidth = "auto";
             videoPlayerHeight = "200px";
+            introFontSize.fontSize = "60%";
         }
         return (
             <div className="App" style={{ overflowX: "hidden" }}>
@@ -74,7 +76,7 @@ class App extends Component {
                                 fluid
                             ></Image>
 
-                            <div className="intro">
+                            <div className="intro" style = {introFontSize}>
                                 Sidney Tan
                                 <p>Full Stack Developer</p>
                                 <this.scrollToFunc section="bio" />
@@ -124,7 +126,7 @@ class App extends Component {
                                         fluid
                                     ></Image>
                                     <br></br>
-                                    <p className="fabflix_description">
+                                    <div className="fabflix_description">
                                         A Course scheduler made with the MERN
                                         stack!
                                         <br></br>
@@ -171,7 +173,7 @@ class App extends Component {
                                                 }}
                                             ></img>
                                         </Button>
-                                    </p>
+                                    </div>
                                 </div>
                                 <br></br>
                                 <div style={{ textAlign: "left" }}>
@@ -184,7 +186,7 @@ class App extends Component {
                                         height={videoPlayerHeight}
                                         style={{ marginBottom: "30px" }}
                                     ></ReactPlayer>
-                                    <p className="fabflix_description">
+                                    <div className="fabflix_description">
                                         CRUD web app that allows users to
                                         buy/search movies.
                                         <br></br>
@@ -213,7 +215,7 @@ class App extends Component {
                                                 }}
                                             ></img>
                                         </Button>
-                                    </p>
+                                    </div>
                                 </div>
                                 <br></br>
                                 <div style={{ textAlign: "left" }}>
