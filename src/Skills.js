@@ -9,7 +9,7 @@ function importAll(file) {
     file.keys().forEach((item) => {
         let itemReplace = item.replace("./", "");
         let key = itemReplace.slice(0, itemReplace.length - 4);
-        if (key === "React" || key === "node" || key === "Express") {
+        if (key === "React" || key === "Node" || key === "Express") {
             key += ".js";
         }
         images[key] = file(item);
