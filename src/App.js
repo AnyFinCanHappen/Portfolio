@@ -202,7 +202,7 @@ class App extends Component {
                                         </div>
                                         <Button
                                             variant="logoColor"
-                                            href="https://github.com/AnyFinCanHappen/FabFlix"
+                                            href="https://github.com/AnyFinCanHappen/FabFlix_Updated"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
