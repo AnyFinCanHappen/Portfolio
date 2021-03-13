@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
 import { Link, animateScroll as scroll } from "react-scroll";
+import {Helmet} from "react-helmet";
 import "./App.css";
 import "./css/logo.css";
 import NavBar from "./NavBar";
@@ -66,6 +67,9 @@ class App extends Component {
         }
         return (
             <div className="App" style={{ overflowX: "hidden" }}>
+                <Helmet>
+                    <meta property = "og:image" content= {background_image}/>
+                </Helmet>
                 <NavBar width={width}> </NavBar>
                 <Container fluid>
                     <Row>
