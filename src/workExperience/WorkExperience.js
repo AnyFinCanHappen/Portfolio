@@ -37,7 +37,7 @@ function WorkExperience() {
               <li>
                 Developed a Single Page Application (SPA) by using Covalent
                 open-source framework, which is built on Angular 8, Angular CLI,
-                TypeScript, RxJS, Angular-Material design, Karma, Jasmine, d3,
+                TypeScript, RxJS, NgRx, Angular-Material design, Karma, Jasmine, d3,
                 NGX, Sass.
               </li>
               <li>
