@@ -12,6 +12,9 @@ function importAll(file) {
         if (key === "React" || key === "Node" || key === "Express") {
             key += ".js";
         }
+        if(key === "Cplus"){
+            key = "C++";
+        }
         images[key] = file(item);
     });
     return images;
