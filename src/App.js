@@ -262,7 +262,7 @@ class App extends Component {
             <Col md={6} xs={10}>
               <div id="contact">
                 <p className="title">Contact Me</p>
-                <p className="github_title">
+                {/* <p className="github_title">
                   <a
                     href="https://www.linkedin.com/in/sidney-tan-60a6b1192"
                     target="_blank"
@@ -270,8 +270,8 @@ class App extends Component {
                   >
                     Linkedin
                   </a>
-                </p>
-                <p className="github_title">sidneyjt@uci.edu</p>
+                </p> */}
+                <p className="github_title">sidney.jk.tan@gmail.com</p>
                 <img src={logo} alt="self" className="self_image" />
                 <br></br>
                 <br></br>
