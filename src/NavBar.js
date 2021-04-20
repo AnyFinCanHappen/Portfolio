@@ -51,8 +51,11 @@ class NavBar extends Component {
     render() {
         const { width } = this.props;
         let fontSize = "20px";
-        if (width < 400) {
-            fontSize = "14px";
+        if(width < 565){
+            fontSize = "14px"
+        }
+        if (width < 435) {
+            fontSize ="10px";
         }
         return (
             <nav
@@ -72,6 +75,11 @@ class NavBar extends Component {
                     <this.scrollToFunc
                         section="bio"
                         text="Bio"
+                        fontSize={fontSize}
+                    />
+                    <this.scrollToFunc
+                        section="work_experience"
+                        text="Experience"
                         fontSize={fontSize}
                     />
                     <this.scrollToFunc

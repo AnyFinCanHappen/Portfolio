@@ -13,7 +13,7 @@ import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Skills from "./Skills";
-
+import WorkExperience from "./workExperience/WorkExperience";
 import background_image from "./css/background_mono.jpg";
 import mountiePlannerImage from "./css/projectImage/Test.png";
 import linkLogo from "./css/Logos/Link.png";
@@ -105,13 +105,17 @@ class App extends Component {
                                     efficient software.
                                     <br></br>
                                 </p>
-                                <this.scrollToFunc section="project_title" />
+                                <this.scrollToFunc section="work_experience" />
                             </div>
                         </Col>
                         <Col></Col>
                     </Row>
                     <br></br>
                     <br></br>
+                    <div id = "work_experience" style = {{marginBottom:"70px"}}>
+                    <WorkExperience ></WorkExperience>
+                    <this.scrollToFunc section = "project_title"/>
+                    </div>
                     <Row>
                         <Col></Col>
                         <Col md={6} xs={10}>
