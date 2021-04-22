@@ -38,7 +38,7 @@ function WorkExperience() {
                 Developed a Single Page Application (SPA) by using Covalent
                 open-source framework, which is built on Angular 8, Angular CLI,
                 TypeScript, RxJS, NgRx, Angular-Material design, Karma, Jasmine, d3,
-                NGX, Sass.
+                NGX, SCSS.
               </li>
               <li>
                 Created shared modules and components that could be shared
@@ -65,7 +65,7 @@ function WorkExperience() {
               <b>Tools and Languages:</b>
             </div>
             <div>
-              Angular 6, HTML5, CSS3, TypeScript, Node.js, Java 8, Spring Boot,
+              Angular 6, HTML5, CSS3, TypeScript, Java 8, Spring Boot,
               RESTful services, Git, Jasmine, Karma, Agile/Scrum
             </div>
             <div class="visible_div">
@@ -74,7 +74,7 @@ function WorkExperience() {
             <ul>
               <li>
                 Developed, designed, and modified websites with the use of
-                HTML5, CSS3, TypeScript, Angular, Node.js, Java, Spring Boot,
+                HTML5, CSS3, TypeScript, Angular, Java, Spring Boot,
                 and MySQL.
               </li>
               <li>
@@ -107,7 +107,7 @@ function WorkExperience() {
               <b>Tools and Languages:</b>
             </div>
             <div>
-              HTML5, CSS3, JavaScript, Angular 4, Node.js, Sass, Angular
+              HTML5, CSS3, JavaScript, Angular 4, Node.js, SCSS, Angular
               Material UI, RESTful services, Jasmine, Karma, Git, Agile/Scrum
             </div>
             <div class="visible_div">
