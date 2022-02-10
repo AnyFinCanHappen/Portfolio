@@ -1,23 +1,23 @@
-import React, { Component } from "react";
-import ReactPlayer from "react-player";
-import { Link, animateScroll as scroll } from "react-scroll";
-import { Helmet } from "react-helmet";
-import "./App.css";
-import "./css/logo.css";
-import NavBar from "./NavBar";
-import logo from "./css/self_image.jpg";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Skills from "./Skills";
-import WorkExperience from "./workExperience/WorkExperience";
-import background_image from "./css/background_mono.jpg";
-import mountiePlannerImage from "./css/projectImage/Test.png";
-import linkLogo from "./css/Logos/Link.png";
-import githubLogo from "./css/Logos/github.png";
+import React, { Component } from 'react';
+import ReactPlayer from 'react-player';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { Helmet } from 'react-helmet';
+import './App.css';
+import './css/logo.css';
+import NavBar from './NavBar';
+import logo from './css/self_image.jpg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Skills from './Skills';
+import WorkExperience from './workExperience/WorkExperience';
+import background_image from './css/background_mono.jpg';
+import mountiePlannerImage from './css/projectImage/Test.png';
+import linkLogo from './css/Logos/Link.png';
+import githubLogo from './css/Logos/github.png';
 
 class App extends Component {
   state = {
@@ -26,11 +26,11 @@ class App extends Component {
 
   componentDidMount() {
     this.updateWidth();
-    window.addEventListener("resize", this.updateWidth);
+    window.addEventListener('resize', this.updateWidth);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.updateWidth);
+    window.removeEventListener('resize', this.updateWidth);
   }
 
   updateWidth = () => {
@@ -57,16 +57,16 @@ class App extends Component {
 
   render() {
     const { width } = this.state;
-    let videoPlayerWidth = "640px";
-    let videoPlayerHeight = "360px";
+    let videoPlayerWidth = '640px';
+    let videoPlayerHeight = '360px';
     let introFontSize = {};
     if (width < 640) {
-      videoPlayerWidth = "auto";
-      videoPlayerHeight = "200px";
-      introFontSize.fontSize = "60%";
+      videoPlayerWidth = 'auto';
+      videoPlayerHeight = '200px';
+      introFontSize.fontSize = '60%';
     }
     return (
-      <div className="App" style={{ overflowX: "hidden" }}>
+      <div className="App" style={{ overflowX: 'hidden' }}>
         <Helmet>
           <meta property="og:image" content={background_image} />
         </Helmet>
@@ -75,7 +75,7 @@ class App extends Component {
           <Row>
             <Col className="px-0">
               <Image
-                style={{ backgroundSize: "auto" }}
+                style={{ backgroundSize: 'auto' }}
                 src={background_image}
                 fluid
               ></Image>
@@ -93,15 +93,10 @@ class App extends Component {
               <div id="bio">
                 <p className="title">Bio</p>
                 <p className="bio_paragraph">
-                  Angular 2+ developer with over 5 years of industrial
-                  experience. Other technologies with industrial experience
-                  include JavaScript, TypeScript, HTML5, CSS3, Node.js, Java,
-                  Git/GitHub, and many more. Worked in various Agile/Scrum based
-                  environments. I am always eager to learn the latest web
-                  development technologies that can be used in my work or
-                  projects. When it comes to web applications, I want to make
-                  clean and efficient software that will give users a positive
-                  experience.
+                  Front-End Engineer with over 3+ years in creating web
+                  applications with Angular and React. Always eager to create
+                  accessible web applications, collaborate with others, and a
+                  strive to keep learning.
                   <br></br>
                 </p>
                 <this.scrollToFunc section="work_experience" />
@@ -111,7 +106,7 @@ class App extends Component {
           </Row>
           <br></br>
           <br></br>
-          <div id="work_experience" style={{ marginBottom: "70px" }}>
+          <div id="work_experience" style={{ marginBottom: '70px' }}>
             <WorkExperience></WorkExperience>
             <this.scrollToFunc section="project_title" />
           </div>
@@ -123,21 +118,22 @@ class App extends Component {
                   Projects
                 </p>
                 <br></br>
-                <div style={{ textAlign: "left" }}>
+                <div style={{ textAlign: 'left' }}>
                   <p className="fabflix_title">Mountie Planner</p>
                   <Image
                     src={mountiePlannerImage}
-                    style={{ marginBottom: "20px" }}
+                    style={{ marginBottom: '20px' }}
                     fluid
                   ></Image>
                   <br></br>
                   <div className="fabflix_description">
-                    A Course scheduler made with the MERN stack!
+                    Scheduler planner application that allows users to search,
+                    save, and display college
                     <br></br>
                     <div
                       style={{
-                        marginTop: "30px",
-                        marginBottom: "30px",
+                        marginTop: '30px',
+                        marginBottom: '30px',
                       }}
                     >
                       <b>Tools and Languages: </b>
@@ -156,8 +152,8 @@ class App extends Component {
                         src={linkLogo}
                         alt="x"
                         style={{
-                          height: "40px",
-                          width: "40px",
+                          height: '40px',
+                          width: '40px',
                         }}
                       ></img>
                     </Button>
@@ -171,15 +167,15 @@ class App extends Component {
                         src={githubLogo}
                         alt="x"
                         style={{
-                          height: "40px",
-                          width: "40px",
+                          height: '40px',
+                          width: '40px',
                         }}
                       ></img>
                     </Button>
                   </div>
                 </div>
                 <br></br>
-                <div style={{ textAlign: "left" }}>
+                <div style={{ textAlign: 'left' }}>
                   <p className="fabflix_title">Fabflix</p>
                   <ReactPlayer
                     url="https://www.youtube.com/watch?v=mP02Bd30sa8"
@@ -187,15 +183,15 @@ class App extends Component {
                     className="fabflix_player"
                     width={videoPlayerWidth}
                     height={videoPlayerHeight}
-                    style={{ marginBottom: "30px" }}
+                    style={{ marginBottom: '30px' }}
                   ></ReactPlayer>
                   <div className="fabflix_description">
                     CRUD web app that allows users to buy/search movies.
                     <br></br>
                     <div
                       style={{
-                        marginTop: "30px",
-                        marginBottom: "30px",
+                        marginTop: '30px',
+                        marginBottom: '30px',
                       }}
                     >
                       <b>Tools and Languages: </b>
@@ -212,20 +208,20 @@ class App extends Component {
                         src={githubLogo}
                         alt="x"
                         style={{
-                          height: "40px",
-                          width: "40px",
+                          height: '40px',
+                          width: '40px',
                         }}
                       ></img>
                     </Button>
                   </div>
                 </div>
                 <br></br>
-                <div style={{ textAlign: "left" }}>
+                <div style={{ textAlign: 'left' }}>
                   <p className="github_title">
                     Check out more of my projects at my GitHub!
                   </p>
                   <p className="github_description">
-                    Link to my{" "}
+                    Link to my{' '}
                     <a
                       href="https://github.com/AnyFinCanHappen"
                       target="_blank"
@@ -252,7 +248,6 @@ class App extends Component {
               <br></br>
               <this.scrollToFunc section="contact" />
             </Col>
-
             <Col></Col>
           </Row>
           <br></br>
@@ -262,7 +257,7 @@ class App extends Component {
             <Col md={6} xs={10}>
               <div id="contact">
                 <p className="title">Contact Me</p>
-                {/* <p className="github_title">
+                <p className="github_title">
                   <a
                     href="https://www.linkedin.com/in/sidney-tan-60a6b1192"
                     target="_blank"
@@ -270,13 +265,13 @@ class App extends Component {
                   >
                     Linkedin
                   </a>
-                </p> */}
+                </p>
                 <p className="github_title">sidney.jk.tan@gmail.com</p>
                 <img src={logo} alt="self" className="self_image" />
                 <br></br>
                 <br></br>
                 <a onClick={this.scrollToTop} href="/#" className="scroll-up">
-                  {" "}
+                  {' '}
                 </a>
                 <br></br>
                 <br></br>

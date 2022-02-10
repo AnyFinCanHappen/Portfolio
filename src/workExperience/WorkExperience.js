@@ -1,8 +1,8 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import React from "react";
-import "./WorkExperience.css";
-import "../App.css";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import React from 'react';
+import './WorkExperience.css';
+import '../App.css';
 
 function WorkExperience() {
   return (
@@ -12,13 +12,13 @@ function WorkExperience() {
         <div>
           <p class="title">Work Experience</p>
         </div>
-        <div style={{ textAlign: "left" }}>
+        <div style={{ textAlign: 'left' }}>
           <div class="fabflix_title visible_container">
-            Visible | Front-End Engineer
+            JB Hunt | Front-End Engineer
           </div>
           <div class="fabflix_description">
             <div class="visible_div">
-              <b>Project: </b>Visible Website Component - Swap Program
+              <b>Project: </b> Railway Manager, Landing Page, common components
             </div>
             <div class="visible_div">
               <b>When: </b>Jan 2020 - Present
@@ -27,105 +27,61 @@ function WorkExperience() {
               <b>Tools and Languages:</b>
             </div>
             <div>
-              Angular, Node.js, HTML5, CSS3, TypeScript, JavaScript, Express,
-              RESTful services, Git, Jasmine, Karma, Agile/Scrum
+              Angular 8, 9, 12, ,PrimeNg, NgRx, Node.js, HTML5, SCSS,
+              TypeScript, RESTful services, Git, Jasmine, Karma, Agile/Scrum,
+              Azure DevOps
             </div>
             <div class="visible_div">
               <b>Responsibilities:</b>
             </div>
             <ul>
               <li>
-                Developed a Single Page Application (SPA) by using Covalent
-                open-source framework, which is built on Angular 8, Angular CLI,
-                TypeScript, RxJS, NgRx, Angular-Material design, Karma, Jasmine, d3,
-                NGX, SCSS.
+                Rendered collated data via drag and droppable PrimeNg Tables
+                with server side pagination, filtering, sorting, developed
+                template rows, headers, and binded custom events to generate
+                queries, used Angular CDK directives to enable drag and drop,
+                and implemented editable rows with validated auto completable
+                form controls with reactive forms
               </li>
               <li>
-                Created shared modules and components that could be shared
-                across the component’s application.
-              </li>
-              <li>Built the view layer on Angular 8, Material UI.</li>
-              <li>
-                Developed testing cases and implemented unit-tests using testing
-                tools such as Jasmine and Karma.
-              </li>
-            </ul>
-          </div>
-          <div class="fabflix_title visible_container">
-            Emerson Ecologics | Angular Software Developer
-          </div>
-          <div class="fabflix_description">
-            <div class="visible_div">
-              <b>Project: </b>E-Commerce Platform
-            </div>
-            <div class="visible_div">
-              <b>When: </b>Nov 2018 - Dec 2019
-            </div>
-            <div class="visible_div">
-              <b>Tools and Languages:</b>
-            </div>
-            <div>
-              Angular 6, HTML5, CSS3, TypeScript, Java 8, Spring Boot,
-              RESTful services, Git, Jasmine, Karma, Agile/Scrum
-            </div>
-            <div class="visible_div">
-              <b>Responsibilities:</b>
-            </div>
-            <ul>
-              <li>
-                Developed, designed, and modified websites with the use of
-                HTML5, CSS3, TypeScript, Angular, Java, Spring Boot,
-                and MySQL.
+                Upgraded landing page from Angular version 8 to 9 using the
+                Angular command line interface to utilize the Ivy Compiler,
+                TypeScript 3.7, and reduced project’s bundle size by 20%
               </li>
               <li>
-                Transformed design mock-ups into cross-browser compatible
-                HTML5/CSS3 layouts and implemented dynamic elements and reusable
-                libraries with TypeScript and Angular.
+                Managed application’s visual state with NgRx actions and
+                reducers, retrieved and updated application’s visual state in a
+                preference web service with NgRx effects to synchronize
+                application’s visual state with the web service allowing for a
+                seamless user experience from one device to another
               </li>
               <li>
-                Used angular modules like Angular-Animate, Angular-Cookies,
-                Angular-Filter, Angular-Mocks, Angular-Resource, Angular-Route,
-                Angular-Sanitize, Angular-Touch, UI-Bootstrap, etc.
+                Designed and built npm package for searching users and teams
+                with their tasks IDs developed with PrimeNg’s Overlay and
+                Autocomplete modules, allowing consuming applications to supply
+                custom list template by supplying a TemplateRef via input
+                property, rendering TemplateRefs with ng-container elements and
+                the ngTemplateOutlet directive, becoming the standard component
+                for searching users and their tasks
               </li>
               <li>
-                Wrote unit tests for the developed applications using testing
-                tools such as Jasmine and Karma.
-              </li>
-            </ul>
-          </div>
-          <div class="fabflix_title visible_container">
-            Cox Automotive | User Interface Engineer
-          </div>
-          <div class="fabflix_description">
-            <div class="visible_div">
-              <b>Project: </b> Kelly Blue Book – Instant Cash Offer (KBB-ICO)
-            </div>
-            <div class="visible_div">
-              <b>When: </b>Sept 2017 - Oct 2018
-            </div>
-            <div class="visible_div">
-              <b>Tools and Languages:</b>
-            </div>
-            <div>
-              HTML5, CSS3, JavaScript, Angular 4, Node.js, SCSS, Angular
-              Material UI, RESTful services, Jasmine, Karma, Git, Agile/Scrum
-            </div>
-            <div class="visible_div">
-              <b>Responsibilities:</b>
-            </div>
-            <ul>
-              <li>
-                Developed various UIs for the front-end side using Angular 4 and
-                used various components from the Angular Material UI for the
-                application development.
+                Pushed new features into development, testing, and production
+                environments using continuous integration and deployment
+                pipelines by automating and testing builds, enabling anytime
+                releases
               </li>
               <li>
-                Worked with Angular 4 controllers, custom pipes, Services and
-                Custom directives.
+                Rebuilt header’s sidebar navigation component with PrimeNg’s
+                ScrollPanel and Listbox modules, dynamically styled and
+                positioned the component using the NgClass directive, injected
+                HttpClient into services to retrieve links from a security web
+                service, generated list elements with the MenuItem interface,
+                and saved favorite links through a preference web service,
+                eventually replacing the legacy sidebar component
               </li>
               <li>
-                Involved in writing application-level code to interact with
-                APIs, RESTful Web Services using Angular HTTP modules.
+                Maintained 100% unit test coverage using Jasmine and integrated
+                e2e test with Cypress
               </li>
             </ul>
           </div>

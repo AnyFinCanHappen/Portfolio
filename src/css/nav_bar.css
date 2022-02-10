@@ -1,4 +1,3 @@
-
 :root {
   --background-color: #ffffff;
   --detail-color: black;
@@ -13,9 +12,10 @@
   font-size: 20px;
   color: var(--detail-font-color);
   text-decoration: none;
+  cursor: pointer;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   font-weight: bold;
   color: var(--detail-font-color);
 }
@@ -30,7 +30,7 @@
 }
 
 .nav-bar {
-  top:0;
+  top: 0;
   display: flex;
   justify-content: center;
   width: calc(100vw);
@@ -42,7 +42,7 @@
   transition: background 1s;
 }
 
-.nav-bar-hidden{
+.nav-bar-hidden {
   display: flex;
   justify-content: center;
   width: calc(100vw);

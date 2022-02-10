@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
 
 .App {
@@ -7,94 +6,80 @@
   font: normal 300 64px/1 'Josefin Sans', sans-serif;
 }
 
-.intro{
+.intro {
   position: absolute;
-  top:25%;
+  top: 25%;
   width: 100vw;
 }
 
-
-.background_image{
-  top:50%;
+.background_image {
+  top: 50%;
   background-image: url(./css/background_mono.jpg);
   background-size: cover;
   height: 100vh;
-  
 
   background-position: top;
   background-repeat: no-repeat;
-  background-color:#7d7d7d;
+  background-color: #7d7d7d;
 }
 
-
-.title
-{
+.title {
   padding-top: 50px;
   font: normal 50px/1 'Josefin Sans', sans-serif;
 }
 
-.bio_section
-{
+.bio_section {
   margin-left: auto;
   margin-right: auto;
   height: 800px;
   width: 700px;
 }
 
-.bio_paragraph
-{
+.bio_paragraph {
   padding-top: 5px;
   font: 300 normal 30px/1 'Josefin Sans', sans-serif;
   text-align: left;
 }
 
-.projects_section
-{
+.projects_section {
   margin-left: auto;
   margin-right: auto;
   height: 1100px;
   width: 700px;
 }
 
-.fabflix_title
-{
+.fabflix_title {
   font: normal 32px/1 'Josefin Sans', sans-serif;
 }
 
-.fabflix_player
-{
+.fabflix_player {
   width: auto;
-  height:auto;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   border-color: white;
 }
-.fabflix_description
-{
+.fabflix_description {
   font: normal 300 28px/1 'Josefin Sans', sans-serif;
 }
 
-.github_title
-{
+.github_title {
   padding-top: 20px;
   font: normal 32px/1 'Josefin Sans', sans-serif;
 }
 
-.github_description
-{
+.github_description {
   font: normal 300 28px/1 'Josefin Sans', sans-serif;
 }
 
-.contact_section
-{
+.contact_section {
   margin-left: auto;
   margin-right: auto;
   height: 900px;
   width: 700px;
 }
 
-.self_image
-{
+.self_image {
   margin-left: auto;
   margin-right: auto;
   width: 20%;
@@ -105,61 +90,61 @@
   margin-left: -17px;
   width: 32px;
   height: 32px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   background-size: 14px auto;
   border-radius: 50%;
   z-index: 2;
   -webkit-animation: bounce 2s infinite 2s;
   animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
 }
 
 .scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-45deg);
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  width: 12px;
+  height: 12px;
+  content: '';
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
 }
 
-.scroll-down:hover{
+.scroll-down:hover {
   border: 4px solid white;
 }
-
 
 .scroll-up {
   position: absolute;
   margin-left: -17px;
   width: 32px;
   height: 32px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   background-size: 14px auto;
   border-radius: 50%;
   z-index: 2;
   -webkit-animation: bounce 2s infinite 2s;
   animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .scroll-up:before {
-    position: absolute;
-    top: calc(50% - 3px);
-    left: calc(50% - 6px);
-    transform: rotate(-227deg);
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
+  position: absolute;
+  top: calc(50% - 3px);
+  left: calc(50% - 6px);
+  transform: rotate(-227deg);
+  width: 12px;
+  height: 12px;
+  content: '';
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
 }
 
-.scroll-up:hover{
+.scroll-up:hover {
   border: 4px solid white;
 }
 
@@ -184,4 +169,3 @@
     transform: translateY(-5px);
   }
 }
-
